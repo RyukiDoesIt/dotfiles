@@ -106,6 +106,8 @@ alias vim='nvim'
 alias ls='eza -l --icons=auto'
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first'
 alias tree='eza --tree --icons=auto'
+alias cat='bat'
+alias pcat='bat -p'
 
 # Useful Aliases
 alias ..='cd ..'
