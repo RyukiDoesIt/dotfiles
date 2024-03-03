@@ -74,7 +74,7 @@ Use this command.
 ```bash
 curl -sS https://starship.rs/install.sh | sh
 ```
-Then add your preferred `starship.toml`.
+Then add your preferred `starship.toml`, found [here](https://starship.rs/presets/ "starship presets").
 
 ### eza & bat
 
