@@ -74,7 +74,7 @@ Then add your preferred `starship.toml`.
 ### eza & bat
 
 For `eza` follow [installation guide](https://github.com/eza-community/eza/blob/main/INSTALL.md "eza installation guide"). <br>
-For `bat` either use `sudo apt install bat` or `sudo pacman -S bat` depending on operating system. If using `apt` package manager `bat` is installed as `batcat`. So create a symlink like this.
+For `bat` either use `sudo apt install bat` or `sudo pacman -S bat` depending on distro. If using `apt` package manager `bat` is installed as `batcat`. So create a symlink like this.
 
 ```zsh
 mkdir -p ~/.local/bin
