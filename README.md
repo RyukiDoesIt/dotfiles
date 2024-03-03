@@ -31,6 +31,11 @@ git clone https://github.com/RyukiDoesIt/dotfiles.git ~/.dotfiles
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
+Or we can use `stow` to create symlinks automatically.
+```sh
+sudo pacman -S stow
+```
+Create the `.dotfiles` directory in `$HOME` and running `stow .` inside `~/.dotfiles`.
 
 ## Install Other tools
 
