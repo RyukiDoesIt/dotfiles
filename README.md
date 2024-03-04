@@ -2,9 +2,12 @@
 
 Organize my dotfiles in new setups.
 
-## Bootstrapping on a new setup
 
-1. Install git if not installed.
+## Install Dependencies
+
+### git
+
+Install git if not installed.
 
 ```zsh
 # For Debian/Ubuntu/Mint
@@ -14,30 +17,6 @@ sudo dnf install git
 # For Arch
 sudo pacman -Sy git
 ```
-
-2. Clone the repo to a new hidden dotfiles directory.
-
-```zsh
-# Use SSH (if set up)
-git clone git@github.com:RyukiDoesIt/dotfiles.git ~/.dotfiles
-# Or use HTTPS
-git clone https://github.com/RyukiDoesIt/dotfiles.git ~/.dotfiles
-```
-
-3. Create symlinks in $HOME directory to real files in repo.
-
-```zsh
-# Learn install script to automate this
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-```
-Or we can use `stow` to create symlinks automatically.
-```sh
-sudo pacman -S stow
-```
-Create the `.dotfiles` directory in `$HOME` and running `stow .` inside `~/.dotfiles`.
-
-## Install Other tools
 
 ### oh-my-zsh
 
@@ -101,5 +80,30 @@ sudo tar -C /opt -xzf nvim-linux64.tar.gz
 ```sh
 export PATH="$PATH:/opt/nvim-linux64/bin"
 ```
+
+## Bootstrapping on a new setup
+
+1. Clone the repo to a new hidden dotfiles directory.
+
+```zsh
+# Use SSH (if set up)
+git clone git@github.com:RyukiDoesIt/dotfiles.git ~/.dotfiles
+# Or use HTTPS
+git clone https://github.com/RyukiDoesIt/dotfiles.git ~/.dotfiles
+```
+
+2. Create symlinks in $HOME directory to real files in repo.
+
+```zsh
+# Learn install script to automate this
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+```
+Or we can use `stow` to create symlinks automatically.
+```sh
+sudo pacman -S stow
+```
+Create the `.dotfiles` directory in `$HOME` and running `stow .` inside `~/.dotfiles`.
+
 
 ## TBA
