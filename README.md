@@ -10,11 +10,8 @@ Organize my dotfiles in new setups.
 Install git if not installed.
 
 ```zsh
-# For Debian/Ubuntu/Mint
 sudo apt install git
-# For Fedora
-sudo dnf install git
-# For Arch
+# Or
 sudo pacman -Sy git
 ```
 
@@ -23,9 +20,8 @@ sudo pacman -Sy git
 Install zsh using this command.
 
 ```zsh
-# For Debian/Ubuntu
 sudo apt install zsh
-#For Arch
+# Or
 sudo pacman -S zsh
 ```
 
@@ -37,10 +33,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### zsh plugins using oh-my-zsh
 
+zsh-autosuggestions
 ```zsh
-# zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# zsh-syntax-highlighting
+```
+zsh syntax highlighting
+```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
@@ -52,6 +50,8 @@ Use this command.
 
 ```bash
 curl -sS https://starship.rs/install.sh | sh
+# Or
+sudo pacman -S starship
 ```
 Then add your preferred `starship.toml`, found [here](https://starship.rs/presets/ "starship presets").
 
