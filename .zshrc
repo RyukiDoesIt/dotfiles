@@ -137,13 +137,21 @@ function in {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Aliases
-alias vim='nvim'
-alias ls='eza -l --icons=auto'
-alias ll='eza -lha --icons=auto --sort=name --group-directories-first'
-alias tree='eza --tree --icons=auto'
+alias vim='nvim' # neovim
+alias ls='eza -l --icons=auto' # long list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias tree='eza --tree --icons=auto' # tree view
+alias ld='eza -lhD --icons=auto' # long list directories
 alias cat='bat'
 alias pcat='bat -p'
 alias btop='btop --utf-force'
+alias un='$aurhelper -Rns' # uninstall package
+alias up='$aurhelper -Syu' # update system/package/aur
+alias pl='$aurhelper -Qs' # list installed package
+alias pa='$aurhelper -Ss' # list availabe package
+alias pc='$aurhelper -Sc' # remove unused cache
+alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
+alias vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
 
 # Useful Aliases
 alias ..='cd ..'
