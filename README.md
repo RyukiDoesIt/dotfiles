@@ -3,12 +3,24 @@
 Organize my dotfiles in new setups.
 
 ## Install Dependencies
+### 1. Important
+<div align="center">
+  <p>
+    ** Base ** - [Arch](https://archlinux.org/) <br>
+    ** Wayland Compositor ** - [Hyprland](https://hyprland.org/) <br>
+    ** Bar ** - [Waybar](https://github.com/Alexays/Waybar) <br>
+    ** Dmenu Program ** - [Rofi (Lbonn Fork)](https://github.com/lbonn/rofi) <br>
+    ** Wallpaper ** - [Swww](https://github.com/LGFae/swww) <br>
+    ** Browser ** - [Brave](https://brave.com/linux/) <br>
+    ** Screen locker ** - [Hyprlock](https://github.com/hyprwm/hyprlock)
+  </p>
+</div>
 
-### git
+### 2. git
 
 Install git if not installed using `sudo pacman -Sy git` command.
 
-### oh-my-zsh
+### 3. oh-my-zsh
 
 Install zsh using this command `sudo pacman -S zsh`.
 
@@ -18,7 +30,7 @@ Now install oh-my-zsh using this command.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### zsh plugins using oh-my-zsh
+### 4. zsh plugins using oh-my-zsh
 
 zsh-autosuggestions
 ```sh
@@ -29,13 +41,13 @@ zsh syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-### Starship
+### 5. Starship
 
 Use `sudo pacman -S starship` command. For other distros use [starship](https://starship.rs/guide/#%F0%9F%9A%80-installation "starship installation")
 
 Then add your preferred `starship.toml`, found [here](https://starship.rs/presets/ "starship presets").
 
-### eza & bat
+### 6. eza & bat
 
 For `eza` follow [installation guide](https://github.com/eza-community/eza/blob/main/INSTALL.md "eza installation guide"). <br>
 For `bat` either use `sudo apt install bat` or `sudo pacman -S bat` depending on distro. If using `apt` package manager `bat` is installed as `batcat`. So create a symlink like this.
@@ -45,10 +57,9 @@ mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 ```
 
-### Install latest neovim
+### 7. Install latest neovim
 
 For Arch just use `sudo pacman -S neovim`.
-
 
 ## Bootstrapping on a new setup
 
