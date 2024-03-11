@@ -2,16 +2,6 @@
 
 Organize my dotfiles in new setups.
 
-# Base System
-<p> </p>
-
-
-<div align="center">
-    - 🍀 ** Base ** - [Arch](https://archlinux.org/)
-    - 🌼 ** Wayland Compositor ** - [Hyprland](https://hyprland.org/)
-    - ✨ ** Bar ** - [Waybar](https://github.com/Alexays/Waybar)
-</div>
-
 ## Install Dependencies
 
 ### git
