@@ -151,7 +151,7 @@ alias pl='$aurhelper -Qs' # list installed package
 alias pa='$aurhelper -Ss' # list availabe package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
-alias code='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
+alias code='code --ozone-platform=wayland --disable-gpu' # gui code editor
 
 # Useful Aliases
 alias ..='cd ..'
