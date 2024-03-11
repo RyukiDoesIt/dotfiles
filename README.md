@@ -40,41 +40,32 @@ Then add your preferred `starship.toml`, found [here](https://starship.rs/preset
 For `eza` follow [installation guide](https://github.com/eza-community/eza/blob/main/INSTALL.md "eza installation guide"). <br>
 For `bat` either use `sudo apt install bat` or `sudo pacman -S bat` depending on distro. If using `apt` package manager `bat` is installed as `batcat`. So create a symlink like this.
 
-```zsh
+```sh
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 ```
 
 ### Install latest neovim
 
-For Arch just use `sudo pacman -S neovim`. <br>
-To get pre-built archives use this.
+For Arch just use `sudo pacman -S neovim`.
 
-```zsh
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-```
-`$PATH` already in `~/.dotfiles/.zshrc`:
-Otherwise,
-```sh
-export PATH="$PATH:/opt/nvim-linux64/bin"
-```
 
 ## Bootstrapping on a new setup
 
 1. Clone the repo to a new hidden dotfiles directory.
 
-```zsh
-# Use SSH (if set up)
+SSH
+```sh
 git clone git@github.com:RyukiDoesIt/dotfiles.git ~/.dotfiles
-# Or use HTTPS
+```
+HTTPS
+```sh
 git clone https://github.com/RyukiDoesIt/dotfiles.git ~/.dotfiles
 ```
 
 2. Create symlinks in $HOME directory to real files in repo.
 
-```zsh
+```sh
 # Learn install script to automate this
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
