@@ -2,39 +2,36 @@
 
 Organize my dotfiles in new setups.
 
+# Base System
+<p> </p>
+
+
+<div align="center">
+    - 🍀 ** Base ** - [Arch](https://archlinux.org/)
+    - 🌼 ** Wayland Compositor ** - [Hyprland](https://hyprland.org/)
+    - ✨ ** Bar ** - [Waybar](https://github.com/Alexays/Waybar)
+</div>
 
 ## Install Dependencies
 
 ### git
 
-Install git if not installed.
-
-```zsh
-sudo apt install git
-# Or
-sudo pacman -Sy git
-```
+Install git if not installed using `sudo pacman -Sy git` command.
 
 ### oh-my-zsh
 
-Install zsh using this command.
-
-```zsh
-sudo apt install zsh
-# Or
-sudo pacman -S zsh
-```
+Install zsh using this command `sudo pacman -S zsh`.
 
 Now install oh-my-zsh using this command.
 
-```zsh
+```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### zsh plugins using oh-my-zsh
 
 zsh-autosuggestions
-```zsh
+```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 zsh syntax highlighting
@@ -42,17 +39,10 @@ zsh syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-Add the plugin `zsh-autosuggestions` and `zsh-syntax-highlighting` to the list of plugins for Oh My Zsh to load (inside `~/.dotfiles/.zshrc`).
-
 ### Starship
 
-Use this command.
+Use `sudo pacman -S starship` command. For other distros use [starship](https://starship.rs/guide/#%F0%9F%9A%80-installation "starship installation")
 
-```bash
-curl -sS https://starship.rs/install.sh | sh
-# Or
-sudo pacman -S starship
-```
 Then add your preferred `starship.toml`, found [here](https://starship.rs/presets/ "starship presets").
 
 ### eza & bat
@@ -76,7 +66,7 @@ sudo rm -rf /opt/nvim
 sudo tar -C /opt -xzf nvim-linux64.tar.gz
 ```
 `$PATH` already in `~/.dotfiles/.zshrc`:
-
+Otherwise,
 ```sh
 export PATH="$PATH:/opt/nvim-linux64/bin"
 ```
@@ -98,6 +88,8 @@ git clone https://github.com/RyukiDoesIt/dotfiles.git ~/.dotfiles
 # Learn install script to automate this
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.config/hypr ~/.config/
+ln -s ~/.dotfiles/.config/waybar ~/.config/
 ```
 Or we can use `stow` to create symlinks automatically.
 ```sh
