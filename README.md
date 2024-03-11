@@ -4,17 +4,14 @@ Organize my dotfiles in new setups.
 
 ## Install Dependencies
 ### 1. Important
-<div align="center">
-  <p>
-    ** Base ** - [Arch](https://archlinux.org/) <br>
-    ** Wayland Compositor ** - [Hyprland](https://hyprland.org/) <br>
-    ** Bar ** - [Waybar](https://github.com/Alexays/Waybar) <br>
-    ** Dmenu Program ** - [Rofi (Lbonn Fork)](https://github.com/lbonn/rofi) <br>
-    ** Wallpaper ** - [Swww](https://github.com/LGFae/swww) <br>
-    ** Browser ** - [Brave](https://brave.com/linux/) <br>
-    ** Screen locker ** - [Hyprlock](https://github.com/hyprwm/hyprlock)
-  </p>
-</div>
+
+- Base: [Arch](https://archlinux.org/) <br>
+- Wayland Compositor: [Hyprland](https://hyprland.org/) <br>
+- Bar: [Waybar](https://github.com/Alexays/Waybar) <br>
+- Dmenu Program: [Rofi (lbonn Fork)](https://github.com/lbonn/rofi) <br>
+- Wallpaper Daemon: [Swww](https://github.com/LGFae/swww) <br>
+- Browser: [Brave](https://brave.com/linux/) <br>
+- Screen locker: [Hyprlock](https://github.com/hyprwm/hyprlock)
 
 ### 2. git
 
