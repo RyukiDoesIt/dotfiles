@@ -1,3 +1,5 @@
+<div align = center><img src="https://github.com/RyukiDoesIt/dotfiles/blob/main/Source/Arch.png"><br></div>
+
 # Dotfiles
 
 Organize my dotfiles in new setups.
