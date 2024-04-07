@@ -5,11 +5,13 @@ export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
 ZSH=/usr/share/oh-my-zsh/
 
 # Path to powerlevel10k theme
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo zsh-256color zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git sudo zsh-256color)
 source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # In case a command is not found, try to find the package that has it
 function command_not_found_handler {
