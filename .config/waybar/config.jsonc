@@ -94,7 +94,9 @@
         }
     },
     "hyprland/window": {
-      "format": "{}"
+      //"format": "{}"//
+      "format": "<span font='10' rise='-4444'> {}</span>",
+      "max-length": 500
     },
     "network": {
       "format": " 󰖩",
