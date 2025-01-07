@@ -19,14 +19,15 @@ alias ld='eza -lhD --icons=auto' # long list directories
 alias cat='bat'
 alias pcat='bat -p'
 alias btop='btop --utf-force'
-alias un='$aurhelper -Rns' # uninstall package
-alias up='$aurhelper -Syu' # update system/package/aur
-alias pl='$aurhelper -Qs' # list installed package
+alias yeet='sudo pacman -Rncs' # uninstall package
+alias update='sudo pacman -Syu' # update system/package
+alias aurupdate='paru -Syu' # update aur
+alias plist='pacman -Qs' # list installed package
 alias s='sudo pacman -Ss' # list availabe pacman package
 alias ps='paru -Ss' # list availabe aur package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias ro='paru -Qtdq | paru -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
-alias code='codium --ozone-platform=wayland' # gui code editor
+alias code='code --ozone-platform=wayland' # gui code editor
 
 # Useful Aliases
 alias ..='cd ..'
