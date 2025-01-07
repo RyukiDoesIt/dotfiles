@@ -1,5 +1,5 @@
 * {
-    font-family: "Liga SFMono Nerd Font";
+    font-family: "CaskaydiaCove Nerd Font Mono";
     font-size: 13px;
   }
   
@@ -46,22 +46,22 @@
   
   #pulseaudio {
     color: #14b8a6;
-    margin-right: 4px;
+    margin-right: 8px;
   }
   
   #cpu {
     color: #0ea5e9;
-    margin-right: 4px;
+    margin-right: -2px;
   }
   
   #temperature {
     color: #eab308;
-    margin-right: 4px;
+    margin-right: -2px;
   }
   
   #memory {
     color: #d946ef;
-    margin-right: 4px;
+    margin-right: -2px;
   }
   
   #custom-powermenu {
