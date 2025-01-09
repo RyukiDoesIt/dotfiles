@@ -42,6 +42,12 @@ alias mkdir='mkdir -p'
 # Fixes "Error opening terminal: xterm-kitty" when using the default kitty term to open some programs through ssh
 alias ssh='kitten ssh'
 
+# Keybinds
+bindkey "^[[1;5C" forward-word # ctrl+right-arrow
+bindkey "^[[1;5D" backward-word # ctrl+left-arrow
+bindkey "^[[A" history-substring-search-up # history up
+bindkey "^[[B" history-substring-search-down # history down
+
 # Source antidote
 source $HOME/.antidote/antidote.zsh
 antidote load $HOME/.zsh_plugins.txt
