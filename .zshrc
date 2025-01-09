@@ -48,6 +48,7 @@ bindkey "^[[1;5D" backward-word # ctrl+left-arrow
 bindkey "^[[A" history-substring-search-up # history up
 bindkey "^[[B" history-substring-search-down # history down
 bindkey "^[[3;5~" kill-word # ctrl+del
+bindkey "^[[3~" delete-char # del
 
 # Source antidote
 source $HOME/.antidote/antidote.zsh
