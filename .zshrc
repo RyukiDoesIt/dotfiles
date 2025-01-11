@@ -25,7 +25,7 @@ alias aurupdate='paru -Syu' # update aur
 alias plist='pacman -Qs' # list installed package
 alias s='sudo pacman -Ss' # list availabe pacman package
 alias ps='paru -Ss' # list availabe aur package
-alias pc='$aurhelper -Sc' # remove unused cache
+alias pc='sudo pacman -Sc' # remove unused cache
 alias ro='paru -Qtdq | paru -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias code='code --ozone-platform=wayland' # gui code editor
 
