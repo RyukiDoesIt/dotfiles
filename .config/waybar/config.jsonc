@@ -125,7 +125,7 @@
           "(.*?\\s)YouTube(.*)": "$1YouTube 󰗃",
           "(.*?\\s)Github(.*)": "$1Github "
       },
-      "max-length": 200
+      "max-length": 100
     },
     "network": {
       "format": " 󰖩",
