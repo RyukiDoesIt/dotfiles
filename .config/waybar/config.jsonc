@@ -87,7 +87,7 @@
       "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
     },
     "custom/cpuinfo": {
-      "exec": "NO_EMOJI=1 $HOME/.local/share/bin/cpuinfo.sh",
+      "exec": "NO_EMOJI=1 cpuinfo.sh",
       "return-type": "json",
       "format": "{} ",
       "rotate": 0,
@@ -95,50 +95,6 @@
       "tooltip": true,
       "max-length": 1000
     },
-    // "hyprland/workspaces": {
-    //   "format": "<sub>{icon}</sub>{windows}",
-    //   "separate-outputs": false,
-    //   "active-only": false,
-    //   // turn on true to show same all workspaces on each monitor
-    //   "all-outputs": false,
-    //   "window-rewrite-default": "",
-    //   "window-rewrite": {
-    //     "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
-    //     "class<firefox>": "",
-    //     "class<firefox> title<.*github.*>": "",
-    //     "kitty": "",
-    //     "code": "󰨞"
-    //   },
-    //   "format-icons": {
-    //     // 1-10
-    //     "1": "1",
-    //     "2": "2",
-    //     "3": "3",
-    //     "4": "4",
-    //     "5": "5",
-    //     "6": "6",
-    //     "7": "7",
-    //     "8": "8",
-    //     "9": "9",
-    //     "10": "10",
-    //     // 11-10
-    //     "11": "1",
-    //     "12": "2",
-    //     "13": "3",
-    //     "14": "4",
-    //     "15": "5",
-    //     "16": "6",
-    //     "17": "7",
-    //     "18": "8",
-    //     "19": "9",
-    //     "110": "10"
-    //   }
-    // },
-    // "hyprland/window": {
-    //   //"format": "{}"//
-    //   "format": "<span font='10' rise='-4444'> {initialTitle}</span>",
-    //   "max-length": 50
-    // },
     "hyprland/workspaces": {
       "disable-scroll": true,
       "rotate": 0,
@@ -160,7 +116,7 @@
           "(.*)Mozilla Firefox": "$1 Firefox 󰈹",
           "(.*) - Visual Studio Code": "$1 󰨞",
           "(.*)Visual Studio Code": "$1 Code 󰨞",
-          "(.*) — Thunar": "$1 󰉋",
+          "(.*)Thunar": "$1 󰉋",
           "(.*)Spotify.*": "$1 Spotify 󰓇",
           "(.*)Steam": "$1 Steam 󰓓",
           "(.*) - Discord": "$1  ",
@@ -178,16 +134,6 @@
       "tooltip-format": "{essid}",
       "interval": 2
     },
-    // "temperature": {
-    //   "format": "{icon} {temperatureC}°C ",
-    //   "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    //   "critical-threshold": 80,
-    //   "format-icons": [
-    //     "",
-    //     "",
-    //     ""
-    //   ]
-    // },
     "pulseaudio": {
       "format": " {volume}%",
       "scroll-step": 1,
