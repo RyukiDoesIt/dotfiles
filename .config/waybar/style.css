@@ -1,16 +1,19 @@
 * {
-    font-family: "CaskaydiaCove Nerd Font Propo";
-    font-weight: 700;
-    font-size: 13px;
+    font-family: "JetBrainsMono Nerd Font Propo";
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 10px;
   }
   
+  @import "theme.css";
+
   #waybar {
     background: #171717;
     color: #fff;
   }
   
   #clock {
-    color: #fff;
+    color: #ccc7c5;
   }
   
   #tray {
@@ -35,7 +38,7 @@
   }
   
   #workspaces button.active {
-    color: #84cc16;
+    color: #A0C8B8;
   }
   
   #window {
@@ -48,25 +51,43 @@
   }
   
   #pulseaudio {
-    color: #14b8a6;
+    color: #709793;
     margin-right: 8px;
   }
   
   #cpu {
-    color: #0ea5e9;
-    margin-right: -2px;
-  }
-  
-  #temperature {
-    color: #eab308;
+    color: #98A7A0;
     margin-right: -2px;
   }
   
   #memory {
-    color: #d946ef;
+    color: #E1AA99;
     margin-right: -2px;
   }
   
   #custom-powermenu {
     color: #f43f5e;
+  }
+
+  #custom-cpuinfo {
+    color: #EDDEAB;
+  }
+
+  memory {
+    color: #351f19;
+    color: #5C7C81;
+    color: #709793;
+    color: #98A7A0;
+    color: #E1AA99;
+    color: #A0C8B8;
+    color: #EDDEAB;
+    color: #ccc7c5;
+    color: #7d6b66;
+    color: #5C7C81;
+    color: #709793;
+    color: #98A7A0;
+    color: #E1AA99;
+    color: #A0C8B8;
+    color: #EDDEAB;
+    color: #ccc7c5;
   }
