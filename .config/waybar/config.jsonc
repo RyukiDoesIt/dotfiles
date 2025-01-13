@@ -1,5 +1,6 @@
 {
     "layer": "top",
+    "output": [ "*" ],
     "position": "top",
     "mod": "dock",
     "height": 28,
@@ -58,24 +59,24 @@
       "format": " 󰸗 {:%I:%M %p} ",
       "rotate": 0,
       "tooltip-format": "<span>{calendar}</span>",
-        "calendar": {
-          "mode": "month",
-          "mode-mon-col": 3,
-          "on-scroll": 1,
-          "on-click-right": "mode",
-          "format": {
-            "months": "<span color='#ffeaff'><b>{}</b></span>",
-            "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-            "today": "<span color='#ff6666'><b>{}</b></span>"
-          }
-        },
-        "actions": {
-          "on-click-right": "mode",
-          "on-click-forward": "tz_up",
-          "on-click-backward": "tz_down",
-          "on-scroll-up": "shift_up",
-          "on-scroll-down": "shift_down"
+      "calendar": {
+        "mode": "month",
+        "mode-mon-col": 3,
+        "on-scroll": 1,
+        "on-click-right": "mode",
+        "format": {
+          "months": "<span color='#ffeaff'><b>{}</b></span>",
+          "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+          "today": "<span color='#ff6666'><b>{}</b></span>"
         }
+      },
+      "actions": {
+        "on-click-right": "mode",
+        "on-click-forward": "tz_up",
+        "on-click-backward": "tz_down",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+      }
     },
     "cpu": {
       "interval": 10,
@@ -129,6 +130,7 @@
         "(.*)ryuki@pegasus:(.*)": "$1  :$2",
         "(.*) — LibreWolf": "$1 󰈹",
         "(.*)LibreWolf": "$1LibreWolf 󰈹",
+	      "(.*) - Brave": "$1 ",
         "(.*) - Visual Studio Code": "$1 󰨞",
         "(.*)Visual Studio Code": "$1 Code 󰨞",
         "(.*) - Thunar": "$1 󰉋",
@@ -140,7 +142,7 @@
         "(.*?\\s)YouTube(.*)": "$1YouTube 󰗃",
         "(.*?\\s)Github(.*)": "$1Github "
       },
-      "max-length": 100
+      "max-length": 70
     },
     "network": {
       "format": " 󰖩 ",
