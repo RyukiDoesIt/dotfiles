@@ -42,7 +42,7 @@ alias mkdir='mkdir -p'
 
 # Fixes "Error opening terminal: xterm-kitty" when using the default kitty term to open some programs through ssh
 alias ssh='kitten ssh'
-alias deepseek='ollama run deepseek-r1:8b' # Deepseek R1 LLM local 8b parameter install
+alias deepseek='ollama run deepseek-r1:1.5b' # Deepseek R1 LLM local 8b parameter install
 
 # Keybinds
 bindkey "^[[1;5C" forward-word # ctrl+right-arrow
