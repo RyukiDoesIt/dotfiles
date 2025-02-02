@@ -28,6 +28,7 @@ alias ps='paru -Ss' # list availabe aur package
 alias pc='sudo pacman -Sc' # remove unused cache
 alias ro='paru -Qtdq | paru -Rncs -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias code='code --ozone-platform=wayland' # gui code editor
+alias fsf='fastfetch'
 
 # Useful Aliases
 alias ..='cd ..'
@@ -41,6 +42,7 @@ alias mkdir='mkdir -p'
 
 # Fixes "Error opening terminal: xterm-kitty" when using the default kitty term to open some programs through ssh
 alias ssh='kitten ssh'
+alias deepseek='ollama run deepseek-r1:8b' # Deepseek R1 LLM local 8b parameter install
 
 # Keybinds
 bindkey "^[[1;5C" forward-word # ctrl+right-arrow
