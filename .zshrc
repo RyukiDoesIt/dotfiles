@@ -11,7 +11,7 @@ ZSH=/usr/share/oh-my-zsh/
 plugins=(git sudo)
 
 # Aliases
-alias vim='nvim' # neovim
+# alias vim='nvim' # neovim
 alias ls='eza -l --icons=auto' # long list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias tree='eza --tree --icons=auto' # tree view
