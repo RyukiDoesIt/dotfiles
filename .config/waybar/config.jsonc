@@ -121,7 +121,7 @@
       "on-scroll-down": "hyprctl dispatch workspace +1",
       "persistent-workspaces": {
       }
-    },
+    }, 
     "hyprland/window": {
       "format": "  {}",
       "rotate": 0,
@@ -147,7 +147,7 @@
     "network": {
       "format": " 󰖩 ",
       "format-ethernet": " 󰈀 ",
-      // "tooltip": "{ifname}",
+      "tooltip": "{ifname}",
       "tooltip-format": "{essid}",
       "interval": 2
     },
