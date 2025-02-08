@@ -56,7 +56,7 @@
       // 24 hour
       // "format": " {:%H:%M} ",
       // 12 hour
-      "format": " 󰸗 {:%I:%M %p} ",
+      "format": "<span color='#b2a5ff'> 󰸗 </span>{:%I:%M %p} ",
       "rotate": 0,
       "tooltip-format": "<span>{calendar}</span>",
       "calendar": {
@@ -80,7 +80,7 @@
     },
     "cpu": {
       "interval": 10,
-      "format": "  {usage}% ",
+      "format": "<span color='#f4d9e1'>  </span>{usage}%",
       "rotate": 0,
       "format-alt": " {icon0}{icon1}{icon2}{icon3} ",
       "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
@@ -92,13 +92,13 @@
         "m": 30   // medium
       },
       "interval": 30,
-      "format": "󰾆 {used}GB ",
+      "format": "<span color='#9dd699'>󰾆 </span>{used}GB",
       "rotate": 0,
-      "format-m": "󰾅 {used}GB ",
-      "format-h": "󰓅 {used}GB ",
-      "format-c": " {used}GB ",
+      "format-m": "<span color='#9dd699'>󰾅 </span>{used}GB",
+      "format-h": "<span color='#fba518'>󰓅 </span>{used}GB",
+      "format-c": "<span color='#ff0000'> </span>{used}GB",
       "format-alt": "󰾆 {percentage}% ",
-      "max-length": 10,
+      "max-length": 11,
       "tooltip": true,
       "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
     },
@@ -145,14 +145,15 @@
       "max-length": 70
     },
     "network": {
-      "format": " 󰖩 ",
-      "format-ethernet": " 󰈀 ",
+      "format": "<span color='#efb6cb'> 󰤨 </span>",
+      "format-disconnected": "<span color='#efb6cb'> 󰤭 </span>",
+      "format-ethernet": "<span color='#f39e60'>  </span>",
       "tooltip": "{ifname}",
       "tooltip-format": "{essid}",
       "interval": 2
     },
     "pulseaudio": {
-      "format": "  {volume}% ",
+      "format": "<span color='#7287fd'>  </span>{volume}% ",
       "scroll-step": 1,
       "on-click": "pavucontrol"
     },
@@ -173,13 +174,13 @@
       },
       "format": "{icon} {capacity}%",
       "rotate": 0,
-      "format-charging": " {capacity}%",
-      "format-plugged": " {capacity}%",
+      "format-charging": "<span color='#ef9f76'> </span>{capacity}%",
+      "format-plugged": "<span color='#ef9f76'> </span>{capacity}%",
       "format-alt": "{time} {icon}",
       "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "custom/powermenu": {
-      "format": "  ",
+      "format": "<span color='#ed6633'>  </span>",
       "tooltip": false,
       "on-click": "exec wlogout -p layer-shell"
     },
