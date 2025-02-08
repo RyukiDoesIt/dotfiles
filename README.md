@@ -1,3 +1,5 @@
-<div align = center><img src="https://github.com/RyukiDoesIt/dotfiles/blob/main/Source/Arch.png"><br></div>
+<img src="/Source/Arch.png" width="100%" />
 
 ## TBA
+
+See [PACCACHE.md]("/Scripts/PACCACHE.md") for installing automated pacman & aur cache cleaner.
