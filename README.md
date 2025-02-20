@@ -12,15 +12,14 @@
     <p></p>
     <div align="center">
         <a>
-            <img src="https://img.shields.io/badge/Repo_Size-69_MiB-blue" />
+            <img alt="Static Badge" src="https://img.shields.io/badge/REPO_SIZE-69_MiB-blue?style=for-the-badge&logo=github&logoColor=%23C6A0F6&color=C6A0F6" />
+        <a>
+            <img alt="Static Badge" src="https://img.shields.io/badge/LICENSE-MIT-blue?style=for-the-badge&logo=unlicense&logoColor=%23F5A97F&color=F5A97F">
         </a>
         <a>
-            <img src="https://img.shields.io/badge/license-MIT-blue" />
+            <img alt="Static Badge" src="https://img.shields.io/badge/OS-ARCH-blue?style=for-the-badge&logo=archlinux&logoColor=%230F94D2&color=0F94D2">
         </a>
-        <a>
-            <img src="https://img.shields.io/badge/OS-Arch-blue" />
-        </a>
-    </div>
+    <p></p>
     </div>
 </h1>
 
