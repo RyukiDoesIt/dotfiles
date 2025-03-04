@@ -89,7 +89,7 @@
 	    }
     },   
     "bluetooth": {
-	    "format": "",
+	    "format": " ",
 	    "on-click": "blueman-manager"
     },
     "cpu": {
@@ -109,7 +109,7 @@
     },
     "backlight": {
 	    "device": "eDP-1",
-	    "format": "{icon}",
+	    "format": "{icon} ",
 	    "tooltip-format": "{percent}",
 	    "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
 	    "on-scroll-up": "~/.config/hypr/scripts/backlight.sh --inc",
