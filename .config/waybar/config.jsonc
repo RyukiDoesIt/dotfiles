@@ -213,7 +213,7 @@
     "custom/power-menu": {
 	    "format": "",
 	    "tooltip-format": "Click to launch wlogout", 
-	    "on-click": "~/.config/hypr/scripts/wlogout.sh"
+	    "on-click": "$HOME/.local/share/bin/wlogout.sh"
     },
     "custom/launcher": {
 	    "format": "󰣇",
