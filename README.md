@@ -27,4 +27,7 @@
 
 ## TBA
 
+To use the wlogout theme properly install [jaq](https://github.com/01mf02/jaq).
+- For Arch : ` sudo pacman -S jaq `
+
 See [PACCACHE.md](/Scripts/PACCACHE.md) for installing automated pacman & aur cache cleaner.
