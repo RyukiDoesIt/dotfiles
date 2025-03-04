@@ -12,7 +12,7 @@
     <p></p>
     <div align="center">
         <a>
-            <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/RyukiDoesIt/dotfiles?style=for-the-badge&logo=github&logoColor=C6A0F6&color=C6A0F6">
+            <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/RyukiDoesIt/dotfiles?style=for-the-badge&logo=GitHub&logoColor=C6A0F6&color=C6A0F6">
         <a>
             <img alt="Static Badge" src="https://img.shields.io/badge/LICENSE-MIT-blue?style=for-the-badge&logo=unlicense&logoColor=%23F5A97F&color=F5A97F">
         </a>
