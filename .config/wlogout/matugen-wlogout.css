@@ -15,10 +15,11 @@
 window {
     font-family: JetBrainsMono Nerd Font;
     font-size: 16pt;
-    color:  @foreground; /* text */
+    color: @foreground;
+    /* text */
     background-color: @surface-alpha;
 
-} 
+}
 
 button {
     background-repeat: no-repeat;
@@ -36,13 +37,13 @@ button {
 button:focus {
     box-shadow: none;
     outline-style: none;
-    background-size : 20%;
+    background-size: 20%;
 }
 
 button:hover {
     background-size: 50%;
     outline-style: none;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .4);
     background-color: @primary;
     color: transparent;
     transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
@@ -51,35 +52,39 @@ button:hover {
 #shutdown {
     background-image: image(url("./icons/power.png"));
 }
+
 #shutdown:hover {
-  background-image: image(url("./icons/power-hover.png"));
+    background-image: image(url("./icons/power-hover.png"));
 }
 
 #logout {
     background-image: image(url("./icons/logout.png"));
-
 }
+
 #logout:hover {
-  background-image: image(url("./icons/logout-hover.png"));
+    background-image: image(url("./icons/logout-hover.png"));
 }
 
 #reboot {
     background-image: image(url("./icons/restart.png"));
 }
+
 #reboot:hover {
-  background-image: image(url("./icons/restart-hover.png"));
+    background-image: image(url("./icons/restart-hover.png"));
 }
 
 #lock {
     background-image: image(url("./icons/lock.png"));
 }
+
 #lock:hover {
-  background-image: image(url("./icons/lock-hover.png"));
+    background-image: image(url("./icons/lock-hover.png"));
 }
 
 #sleep {
     background-image: image(url("./icons/hibernate.png"));
 }
+
 #sleep:hover {
-  background-image: image(url("./icons/hibernate-hover.png"));
+    background-image: image(url("./icons/hibernate-hover.png"));
 }
