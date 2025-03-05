@@ -116,7 +116,7 @@
 	    "on-scroll-down": "~/.config/hypr/scripts/backlight.sh --dec"
     },
     "network": {
-	    "format-wifi": "{icon}",
+	    "format-wifi": "󰤨",
 	    "format-ethernet": "",
 	    "format-disconnected": "󰤭",
 	    "tooltip-format": "{essid}",

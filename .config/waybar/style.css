@@ -44,7 +44,7 @@ window#waybar.hidden {
     padding: 1px 10px;
     background-color: @surface;
     border-radius: 8px;
-    margin: 6px 3px 6px 3px;
+    margin: 3px 3px 6px 3px;
 }
 
 #custom-launcher {
