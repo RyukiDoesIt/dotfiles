@@ -119,7 +119,7 @@
 	    "format-wifi": "󰤨",
 	    "format-ethernet": "",
 	    "format-disconnected": "󰤭",
-	    "tooltip-format": "{essid}",
+	    "tooltip-format": "SSID: {essid}\nSignal: {signalStrength}%\nIP: {ipaddr}\nSpeed: {bandwidth} Mbps",
 	    "on-click": "foot --title FootNmtui sh -c 'sleep 0.1; nmtui'",
 	    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     },
